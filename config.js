@@ -11,7 +11,3 @@ const GENESIS_DATA = {
 };
 
 module.exports = {GENESIS_DATA, MINE_RATE };
-
-
-// const lastHash = lastBlock.hash;
-// let {difficulty} = lastBlock;
