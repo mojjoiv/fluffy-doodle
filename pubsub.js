@@ -8,11 +8,14 @@ const credentials = {
 };
 
 const CHANNELS = {
-    TEST: 'TEST'
+    TEST: 'TEST',
+    BLOCKCHAIN: 'BLOCKCHAIN',
 }
 
 class PubSub {
-    constructor() {
+    constructor({blockchain}) {
+        this.blockchain = blockchain;
+
         this.pubnub = new PubNub(credentials);
 
         this.pubnub.subscribe({channels: Object.values(CHANNELS) });
